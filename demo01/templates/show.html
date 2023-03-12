@@ -1,0 +1,22 @@
+<?<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>博客首页</h1>
+    
+    <!--if-->
+    {% if age >= 18 %}
+        <p>你已经成年了</p>
+    {% else %}
+        <p>您还没有成年</p>
+    {% endif %}
+
+    <!--for-->
+    {% for data in datas %}
+        <p>{{data.name}}-{{data.sex}}</p>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>博客首页</h1>
+    <!--不管是字典还是对象，都可以使用名称.属性方式获取值-->
+    <p>欢迎您 {{user.name}},您今年{{data.age}}岁了</p>
+    <!--jinja2 支持各种过滤器-->
+    <p>name length is {{user.name|length}}</p>
+    <!--使用自定义过滤器-->
+    <p>当前时间是{{d_time|dformat}}</p>
+
+    <!--if-->
+</body>
+</html>
